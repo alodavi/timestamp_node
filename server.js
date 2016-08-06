@@ -23,10 +23,6 @@ app.get('/:query', function(req, res){
   if (input>0) {
     unix = input;
     natural = moment.unix(input).format("MMMM D, YYYY");
-    res.json({
-      'unix': unix,
-      'natural': natural,
-    });
   } 
   
   //CASE 2: input is natural
@@ -39,13 +35,12 @@ app.get('/:query', function(req, res){
   else{
     unix = null;
     natural = null;
-    res.json({
-      'unix': unix,
-      'natural': natural,
-    });
   }
   
-  
+  res.json({
+    'unix': unix,
+    'natural': natural,
+  });
   
   }
   
