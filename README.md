@@ -1,5 +1,4 @@
-# timestamp_node
-Timestamp Microservice in Node.js
+#Timestamp Microservice in Node.js
 
 Node app successfully deployed in Heroku: https://timestampnode.herokuapp.com/
 
